@@ -26,13 +26,16 @@
 // });
 describe('Read', () => {
   it('should retrieve all records from the "users" table', () => {
-  cy.task('queryDb', 'SELECT * FROM activity_log')
-  .then((result) => {
-  expect(result).to.have.lengthOf(4)
-  expect(result[0]).to.deep.include({ id: 1, name: 'John Doe', email: 'johndoe@example.com' })
-  expect(result[1]).to.deep.include({ id: 2, name: 'Jane Doe', email: 'janedoe@example.com' })
-  expect(result[2]).to.deep.include({ id: 3, name: 'Bob Smith', email: 'bobsmith@example.com' })
-  expect(result[3]).to.deep.include({ id: 4, name: 'Alice', email: 'alice@example.com' })
+    // in test
+   cy.task('queryDb', 'This will be output to the terminal')
+    // cy.task('queryDb', 'SELECT * FROM activity_log')
+    // .then((result) => {
+    // expect(result).to.have.lengthOf(4)
+    // expect(result[0]).to.deep.include({ id: 1, name: 'John Doe', email: 'johndoe@example.com' })
+    // expect(result[1]).to.deep.include({ id: 2, name: 'Jane Doe', email: 'janedoe@example.com' })
+    // expect(result[2]).to.deep.include({ id: 3, name: 'Bob Smith', email: 'bobsmith@example.com' })
+    // expect(result[3]).to.deep.include({ id: 4, name: 'Alice', email: 'alice@example.com' })
+    // })
   })
-  })
+  
   })

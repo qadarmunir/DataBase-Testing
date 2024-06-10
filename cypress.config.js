@@ -16,7 +16,7 @@ module.exports = defineConfig({
         server: "127.0.0.1",
         user: "root",
         password: "",
-        database: "testing_database"
+        database: "testing_databse"
       }
     }
   }
