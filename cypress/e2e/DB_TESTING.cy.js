@@ -36,7 +36,7 @@ describe('Example to Demonstrate SQL Database Testing in Cypress', () => {
       expect(result[0].rowCount).to.equal(1)
    })
  })
- it('Delete a Table and Verify', function () {
+ it.only('Delete a Table and Verify', function () {
     cy.task('queryDb', `DROP TABLE Persons`).then((result) => {
         expect(result.message).to.equal("")
     })
