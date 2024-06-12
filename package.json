@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
     "cypress": "^13.11.0",
     "mysql": "^2.18.1"
   }
