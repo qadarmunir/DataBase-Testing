@@ -33,6 +33,7 @@ function queryTestDb(query, config) {
     })
   })
 }
+
 module.exports = (on, config) => {
   on('task', { queryDb: query => { return queryTestDb(query, config) }, }); //For running sql query
 }

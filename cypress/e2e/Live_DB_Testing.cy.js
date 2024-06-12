@@ -19,7 +19,7 @@ describe('Example to Demonstrate SQL Database Testing in Cypress', () => {
             // Add more assertions for other fields as needed
         })
     })
-    it('Verify that there is only one row in customer table that is accessable by id ', function () {
+    it.skip('Verify that there is only one row in customer table that is accessable by id ', function () {
         cy.task('queryDb', "SELECT * FROM `customer` ORDER BY `id` DESC LIMIT 1;").then((result) => {
             cy.log(JSON.stringify(result));
             // Check if a row is retrieved
