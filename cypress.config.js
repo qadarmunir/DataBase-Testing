@@ -6,7 +6,7 @@ module.exports = defineConfig({
       "host": "127.0.0.1",
       "user": "root",
       "password": "",
-      "database": "Testing_DataBase"
+      "database": "testing_databse"
     }
   },
   e2e: {
